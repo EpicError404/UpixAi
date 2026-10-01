@@ -1,21 +1,21 @@
 # UpixAi
 
-Windows photo upscaler with a CustomTkinter interface. Real-ESRGAN x4plus is
-the default model and uses the bundled NCNN/Vulkan runtime. FSRCNN x2 and
-LapSRN x4 are also available.
+CustomTkinter arayüzüne sahip Windows fotoğraf büyütme uygulaması. Varsayılan
+model, birlikte gelen NCNN/Vulkan altyapısını kullanan Real-ESRGAN x4plus'tır.
+FSRCNN x2 ve LapSRN x4 modelleri de kullanılabilir.
 
-## Run from source
+## Kaynaktan çalıştırma
 
 ```powershell
 py -m pip install -r requirements.txt
 py gui.py
 ```
 
-The Real-ESRGAN runtime, model files, and its license are in
-`third_party/realesrgan/`. A Vulkan-capable graphics driver is recommended.
-The OpenCV models are `FSRCNN_x2.pb` and `LapSRN_x4.pb` in the project root.
+Real-ESRGAN çalışma zamanı, model dosyaları ve lisansı `third_party/realesrgan/`
+klasöründedir. Vulkan destekli bir ekran kartı sürücüsü önerilir. OpenCV
+modelleri `FSRCNN_x2.pb` ve `LapSRN_x4.pb` proje kök dizininde bulunur.
 
-## Build a single-file executable
+## Tek dosyalık exe oluşturma
 
 ```powershell
 py -m pip install pyinstaller
@@ -25,4 +25,4 @@ py -m PyInstaller --noconfirm --onefile --windowed --name UpixAi `
   --add-data "third_party/realesrgan;third_party/realesrgan" gui.py
 ```
 
-The current standalone build is `dist/UpixAi_Standalone.exe`.
+Güncel tek dosyalık uygulama `dist/UpixAi_Standalone.exe` konumundadır.
