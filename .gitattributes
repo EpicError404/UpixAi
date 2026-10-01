@@ -1,0 +1,1 @@
+dist/UpixAi_Standalone.exe filter=lfs diff=lfs merge=lfs -text
