@@ -25,4 +25,5 @@ py -m PyInstaller --noconfirm --onefile --windowed --name UpixAi `
   --add-data "third_party/realesrgan;third_party/realesrgan" gui.py
 ```
 
-Güncel tek dosyalık uygulama `dist/UpixAi_Standalone.exe` konumundadır.
+Güncel tek dosyalık uygulamayı [GitHub Releases](https://github.com/EpicError404/UpixAi/releases/latest)
+sayfasından indirebilirsiniz.
